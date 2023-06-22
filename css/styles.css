@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Hiragino Maru Gothic Std';
-    src: url(../fonts/ヒラギノ丸ゴ\ Std\ W4.otf);
+    src: url('../fonts/HiraginoMaruGothicStd.otf');
 }
 
 div {
@@ -80,6 +80,31 @@ body {
     border-right: 0;
     
 }
+
+.bubble-right {
+    display: grid;
+    grid-template-columns: 1fr 20px 40px;
+    padding-top: 30px;
+}
+
+.chat-bubble-right {
+    border: 5px solid transparent;
+    border-right: 0;
+    border-image: url(../images/chat-bubble-re-left.png) 50 round; 
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 100%;
+    
+}
+
+.chat-bubble-right-arrow {
+    height: 100%;
+    border: 20px solid transparent;
+    border-image: url(../images/chat-bubble-re-arrow-r.png) 200 stretch;
+    border-left: 0;
+    
+}
 .message-text {
     height: 100%;
     margin-bottom: 0;
@@ -91,4 +116,9 @@ body {
     align-items: flex-end;
     display: flex;
     padding-right: 4px;
+}
+.chat-face-right {
+    align-items: flex-end;
+    display: flex;
+    padding-left: 4px;
 }
